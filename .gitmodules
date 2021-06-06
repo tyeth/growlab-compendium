@@ -1,0 +1,6 @@
+[submodule "growlab-pics-windowsill-back"]
+	path = growlab-pics-windowsill-back
+	url = https://github.com/tyeth/growlab-pics-windowsill-back.git
+[submodule "growlab-pics-greenhouse"]
+	path = growlab-pics-greenhouse
+	url = https://github.com/tyeth/growlab-pics-greenhouse.git
