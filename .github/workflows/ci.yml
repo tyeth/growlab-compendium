@@ -5,7 +5,7 @@ name: CI
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '3,13,23,33,43,53 * * * *'
+    - cron:  '13,33,53 * * * *'
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
@@ -32,8 +32,9 @@ jobs:
         run: |
           pwd
           git submodule update --init
-          sudo apt install ffmpeg -y
+          sudo apt install ffmpeg head -y
           cd 'growlab-pics-greenhouse/#Bucket052021-01/'
+          pwd
           cp `ls -t | head -n1` ../../latestgreenhouse.jpg
           cd ../..
           cd 'growlab-pics-windowsill-back/#Rocket062021-01/'
