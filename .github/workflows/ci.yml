@@ -35,10 +35,10 @@ jobs:
           sudo apt install ffmpeg -y
           cd 'growlab-pics-greenhouse/#Bucket052021-01/'
           pwd
-          cp `ls -t | head -n1` ../../latestgreenhouse.jpg
+          cp `ls -1t | head -n1` ../../latestgreenhouse.jpg
           cd ../..
           cd 'growlab-pics-windowsill-back/#Rocket062021-01/'
-          cp `ls -t | head -n1` ../../latestWindowSill.jpg
+          cp `ls -1t | head -n1` ../../latestWindowSill.jpg
           cd ../..
           
           
