@@ -32,7 +32,7 @@ jobs:
         run: |
           pwd
           git submodule update --init
-          sudo apt install ffmpeg head -y
+          sudo apt install ffmpeg -y
           cd 'growlab-pics-greenhouse/#Bucket052021-01/'
           pwd
           cp `ls -t | head -n1` ../../latestgreenhouse.jpg
