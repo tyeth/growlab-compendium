@@ -35,18 +35,11 @@ jobs:
           sudo apt install ffmpeg -y
           cd 'growlab-pics-greenhouse/#Bucket052021-01/'
           pwd
-          ls -1t | head -n1
-          cp `ls -1t | head -n1` ../../latestgreenhouse.jpg
+          ffmpeg -pattern_type glob -i './202*.jpg' ../latest#Bucket050221-01.gif
           cd ../..
           cd 'growlab-pics-windowsill-back/#Rocket062021-01/'
           pwd
-          ls -1t | head -n1cp `ls -1t | head -n1` ../../latestWindowSill.jpg
+          ffmpeg -pattern_type glob -i './202*.jpg' ../latestWindowSill.gif
           cd ../..
           
           
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
